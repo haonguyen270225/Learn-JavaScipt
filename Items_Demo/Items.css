@@ -1,0 +1,47 @@
+#Div_Items{
+    width: 176px;
+    height: 235px;
+    background: #22242a;
+    background-image: src = "../Image/Anh01.jpg";
+    border-radius: 20px;
+    float: left;
+    margin: 30px;
+}
+
+div a img{
+    width: 176px;
+    height: 170px;
+    border-radius: 20px;
+}
+
+
+.button13 {
+    border: none;
+    width: 100%;
+    width: 112px;
+    height: 36px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color:  #22242a;    ;
+    text-align: left;
+    color: #fff;
+    font-family: __NeueHaas_b21621;
+    font-size:14px;
+    transition-duration: 0.1s;
+    /* display: flow-root; */
+    cursor: pointer;
+}
+
+/* .button13:hover {
+    background-color:#f8b230;
+    border-radius: 15px;
+} */
+
+.button13:hover {
+    color: #f8b230;
+    text-decoration: underline;
+}
+
+div ul{
+    list-style-type: none;
+}

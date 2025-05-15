@@ -1,8 +1,0 @@
-Thẻ  SVG
-SVG là viết tắt của Scalable Vector Graphics.
-
-SVG định nghĩa đồ họa dựa trên vector theo định dạng XML.
-
-Đồ họa SVG có khả năng thay đổi kích thước và không bị mất chất lượng khi phóng to hoặc thay đổi kích thước.
-
-SVG được hỗ trợ bởi tất cả các trình duyệt chính.

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+        color: brown;
+        border: 2px solid black;
+      }
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background-color: greenyellow;
+        padding: 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 40px;
+      }
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: bisque;
+        height: 300px;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        background-color: #777;
+        text-align: center;
+        color: white;
+      }
+      article {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Bố trí bố cục cho trang html !</h2>
+    <p>Sử dung các phần tử như : hreader , article , setion ....</p>
+    <header>
+      <h2>Phần hearder</h2>
+    </header>
+    <section>
+      <nav>
+        <ul>
+          <li>Các</li>
+          <li>Thanh</li>
+          <li>Phan</li>
+          <li>Trong</li>
+          <li>Setion</li>
+        </ul>
+      </nav>
+    </section>
+    <article>
+      <h2>Phần article</h2>
+      <p>Đây là nội dung trong phần article !</p>
+    </article>
+    <!-- <footer>
+      <p style="padding: 150px">Đây là phần footer</p>
+    </footer> -->
+  </body>
+</html>

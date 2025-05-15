@@ -1,0 +1,30 @@
+/* Danh mục không thứ tự ! */
+.ul_type_suqare{
+    list-style-type:square ; 
+    /* Kieu danh dau muc hinh vuông */
+}
+
+.ul_type_circle{
+    list-style-type: circle;
+    /* Kiểu danh mục hình  tròn ! */
+}
+
+.ul_type_none{
+    list-style-type: none;
+    /* KKiểu danh mục none */
+}
+
+/* Danh mục có thứ tự ! */
+.ol_type_upper-alpha{
+  list-style-type: upper-alpha;
+}
+.ol_type_lower-alpha{
+    list-style-type: lower-alpha;
+}
+.ol_type_lower-roman{
+    list-style-type: lower-roman;
+}
+
+.ol_type_upper-roman{
+    list-style-type: upper-roman;
+}
