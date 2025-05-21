@@ -1,0 +1,10 @@
+#demo{
+    background-color: brown;
+    border: 3px solid saddlebrown;
+}
+
+.body button{
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+}

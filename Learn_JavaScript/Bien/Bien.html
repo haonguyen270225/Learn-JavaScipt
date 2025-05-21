@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn javascript</title>
+  </head>
+  <body>
+    <h1>Biến trong javaScript</h1>
+    <p id="demo"></p>
+    <br />
+    <button
+      style="font-size: 50px; margin: 20px"
+      type="button"
+      onclick="myFunction()"
+    >
+      Try it</button
+    ><br />
+    <p style="font-size: 50px; color: brown" id="demo1"></p>
+    <br />
+    <button
+      style="font-size: 50px; margin: 20px"
+      type="button"
+      onclick="myFunction1()"
+    >
+      Try it</button
+    ><br />
+    <p style="font-size: 50px; color: brown" id="demo2"></p>
+    <button
+      style="font-size: 50px; margin: 20px"
+      type="button"
+      onclick="myFunction2()"
+    >
+      Try it</button
+    ><br />
+    <script>
+      {
+        let a = 10; // biến được khai báo trong khối nên không thể truy cập
+        var c = 100; // biến bên trong khối được khai báo bằng var;
+      }
+      let b = 20; // biến được  khai báo bên ngoài khối nên có thể truy cập;
+      function myFunction() {
+        // function gọi biến bên trong khối
+        document.getElementById("demo").innerHTML = a;
+      }
+      function myFunction1() {
+        // function gọi biến bên ngoài khối.
+        document.getElementById("demo1").innerHTML = b;
+      }
+      function myFunction2() {
+        document.getElementById("demo2").innerHTML = c;
+      }
+    </script>
+    <h1 style="color: brown">Khai báo lại biến !</h1>
+    <p style="font-size: 50px; color: brown" id="demo3"></p>
+    <br />
+    <button
+      style="font-size: 50px; margin: 20px"
+      type="button"
+      onclick="myFunction3()"
+    >
+      Try it
+    </button>
+    <script>
+      var x = 10; // khai báo một biến bằng ừ khóa var;
+      {
+        var x = 5; // khai báo lại biên  x;
+      }
+      function myFunction3() {
+        document.getElementById("demo3").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>

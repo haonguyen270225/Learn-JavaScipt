@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+  </head>
+  <body>
+    <h1>Mảng hằng số !</h1>
+    <p id="demo"></p>
+    <button
+      style="font-size: 50px; margin: 20px"
+      type="button"
+      onclick="myFunction()"
+    >
+      Try it
+    </button>
+    <script>
+      function myFunction() {
+        const cars = ["Ga", "Vit", "Cho", "Heo"]; // Khai báo một mảng hằng số;
+        // Có thể thay đổi giá trị của phần tử;
+        cars[1] = "Bo";
+        // Có thể thêm phần tử
+        cars.push("Cuu");
+        document.getElementById("demo").innerHTML = cars;
+      }
+    </script>
+  </body>
+</html>

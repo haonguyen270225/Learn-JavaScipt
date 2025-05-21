@@ -1,0 +1,59 @@
+<!-- demo dau ra javascript trong tai lieu html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="Bai_02.css" />
+  </head>
+  <body class="body">
+    <p id="demo1">Đoạn văn !</p>
+    <button type="button" onclick="myFunction1()">Sử dụng innerHTML !</button>
+    <p id="demo2">Đoạn văn !</p>
+    <button type="button" onclick="myFunction2()">Sử dụng innerText !</button>
+    <p id="demo3">Đoạn văn !</p>
+    <button type="button" onclick="myFunction3()">
+      Sử dụng innerHTML chứa thẻ khác !
+    </button>
+    <br />
+    <button type="button" onclick="myFunction4()">
+      Sử dụng document.write !</button
+    ><br />
+    <button type="button" onclick="myFunction5()">Sư dụng window.alert !</button
+    ><br />
+    <button type="button" onclick="myFunction6()">Sử dụng alert !</button><br />
+    <button type="button" onclick="myFunction7()">Sử dụng console.log !</button
+    ><br />
+
+    <button onclick="window.print()">Sử dụng window.print()</button>
+    <script>
+      function myFunction1() {
+        document.getElementById("demo1").innerHTML = "Đoạn văn đã thay đổi !";
+      }
+
+      function myFunction2() {
+        document.getElementById("demo2").innerText = "Đoạn văn đã thay đổi !";
+      }
+
+      function myFunction3() {
+        document.getElementById("demo3").innerHTML =
+          "<h2> Đoạn văn đã thay đổi !</h2>";
+      }
+      function myFunction4() {
+        document.write("Hello world !");
+      }
+      function myFunction5() {
+        window.alert("Hello world !");
+      }
+
+      function myFunction6() {
+        alert("Hello world !");
+      }
+
+      function myFunction7() {
+        console.log("Hello world !");
+      }
+    </script>
+  </body>
+</html>
