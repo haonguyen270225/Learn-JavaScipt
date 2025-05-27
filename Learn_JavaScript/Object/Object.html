@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+  </head>
+  <body>
+    <!-- Tạo đối tượng  -->
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 30,
+        fullName: function () {
+          return "Full name : " + this.firstName + " " + this.lastName;
+        },
+        ThongTin: function () {
+          let text = "";
+          for (let x in this) {
+            if (typeof this[x] !== "function") {
+              text += this[x] + " ";
+            }
+          }
+          return text;
+        },
+      };
+      document.getElementById("demo").innerHTML = person.fullName();
+      document.getElementById("demo2").innerHTML = person.ThongTin();
+    </script>
+    <script>
+      const person1 = {
+        name: "nguyen van a ",
+        age: 30,
+        city: "London",
+      };
+      //  Hiển thị đối tượng theo Object.values();
+      const myArray = Object.values(person1);
+      document.getElementById("demo3").innerHTML = myArray;
+      // Hiển thị theo phương thức JSON.stringify();
+      const myString = JSON.stringify(person);
+      document.getElementById("demo4").innerHTML = myString;
+    </script>
+  </body>
+</html>
